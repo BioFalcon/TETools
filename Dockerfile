@@ -23,17 +23,17 @@ RUN mkdir opt/src/ \
     && cd opt/src/ \
     && curl -OSsl https://www.repeatmasker.org/rmblast-2.11.0+-x64-linux.tar.gz \
     && curl -OSsl http://eddylab.org/software/hmmer/hmmer-3.3.2.tar.gz \
-    && curl -OSsl https://github.com/Benson-Genomics-Lab/TRF/archive/v4.09.1.tar.gz trf-4.09.1.tar.gz \
+    && curl -Ssl https://github.com/Benson-Genomics-Lab/TRF/archive/v4.09.1.tar.gz -o trf-4.09.1.tar.gz \
     && curl -OSsl https://www.repeatmasker.org/RepeatScout-1.0.6.tar.gz \
     && curl -OSsl https://www.repeatmasker.org/RepeatModeler/RECON-1.08.tar.gz \
     && curl -OSsl https://github.com/weizhongli/cdhit/releases/download/V4.8.1/cd-hit-v4.8.1-2019-0228.tar.gz \
-    && curl -OSsl https://github.com/genometools/genometools/archive/v1.6.0.tar.gz gt-1.6.0.tar.gz \
-    && curl -OSsl https://github.com/oushujun/LTR_retriever/archive/v2.9.0.tar.gz LTR_retriever-2.9.0.tar.gz \
+    && curl -Ssl https://github.com/genometools/genometools/archive/v1.6.0.tar.gz -o gt-1.6.0.tar.gz \
+    && curl -Ssl https://github.com/oushujun/LTR_retriever/archive/v2.9.0.tar.gz -o LTR_retriever-2.9.0.tar.gz \
     && curl -OSsl https://mafft.cbrc.jp/alignment/software/mafft-7.471-without-extensions-src.tgz \
-    && curl -OSsl https://github.com/TravisWheelerLab/NINJA/archive/0.97-cluster_only.tar.gz NINJA-cluster.tar.gz \
+    && curl -Ssl https://github.com/TravisWheelerLab/NINJA/archive/0.97-cluster_only.tar.gz -o NINJA-cluster.tar.gz \
     && curl -OSsl https://www.repeatmasker.org/coseg-0.2.2.tar.gz \
     && curl -OSsl https://www.repeatmasker.org/RepeatMasker/RepeatMasker-4.1.2-p1.tar.gz \
-    && curl -OSsl https://github.com/BioFalcon/RepeatModeler/archive/refs/tags/v2.0.1.1.tar.gz RepeatModeler-2.0.2a.tar.gz
+    && curl -Ssl https://github.com/BioFalcon/RepeatModeler/archive/refs/tags/v2.0.1.1.tar.gz -o RepeatModeler-2.0.2a.tar.gz
     
 
 # Extract RMBlast
